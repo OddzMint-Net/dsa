@@ -22,4 +22,10 @@ class StackTest {
         stack.push("third")
         assertEquals("third",stack.peek()) // verifying that the stack is still intack after peek
     }
+
+    @Test
+    fun popOnEmptyStackReturnsNull(){
+        val stack = Stack<Double>()
+        assertEquals(null, stack.pop())
+    }
 }
