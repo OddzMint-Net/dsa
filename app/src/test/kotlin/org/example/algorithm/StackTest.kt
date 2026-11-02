@@ -1,6 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
+import kotlin.test.assertNull
 
 class StackTest {
 
@@ -27,5 +28,11 @@ class StackTest {
     fun popOnEmptyStackReturnsNull(){
         val stack = Stack<Double>()
         assertEquals(null, stack.pop())
+    }
+
+    @Test
+    fun peekOnEmptyStackReturnsNull(){
+        val stack = Stack<Int>()
+        assertNull(stack.peek())
     }
 }
