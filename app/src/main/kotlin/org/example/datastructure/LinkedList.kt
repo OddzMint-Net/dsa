@@ -53,5 +53,4 @@ fun toList():List<T>{
 
 fun size():Int = count
 fun isEmpty():Boolean = count == 0
-
 }
